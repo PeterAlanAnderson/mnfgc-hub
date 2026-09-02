@@ -55,6 +55,13 @@ export const communityRegions: CommunityRegion[] = [
         website: "https://www.fargofgc.com",
         discord: "https://discord.gg/URYy7pjugG",
       },
+      {
+        slug: "st-cloud-fgc",
+        name: "St Cloud FGC",
+        city: "St. Cloud",
+        logoFile: "st-cloud-fgc.png",
+        discord: "https://discord.com/invite/dcVhkRYFJK",
+      },
     ],
   },
   {
