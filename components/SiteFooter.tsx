@@ -2,7 +2,7 @@ export default function SiteFooter() {
   return (
     <footer className="border-t border-white/10 bg-zinc-950">
       <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-zinc-400 sm:px-6 lg:px-8">
-        <p>Want to get your community listed on this site?</p>
+        <p>Want to get your Minnesota fighting game community listed on this site?</p>
         <p className="mt-1">
           Reach out to simoncbarjona /{" "}
           <a

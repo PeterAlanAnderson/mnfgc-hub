@@ -19,13 +19,17 @@ export type CommunityRegion = {
   communities: Community[];
 };
 
+export function communityLogoAlt(community: Community): string {
+  return `${community.name} logo, ${community.city}, Minnesota fighting game community`;
+}
+
 export const communityRegions: CommunityRegion[] = [
   {
     id: "twin-cities",
-    title: "Twin Cities",
+    title: "Minnesota Twin Cities locals",
     navLabel: "Twin Cities",
     blurb:
-      "Weekly in-person events in Minneapolis and Saint Paul. Show up, play, and meet the scene.",
+      "Weekly in-person fighting game events in Minneapolis and Saint Paul, Minnesota. Show up, play, and meet the scene.",
     kind: "local",
     communities: [
       {
@@ -57,7 +61,7 @@ export const communityRegions: CommunityRegion[] = [
     title: "Greater Minnesota Local Communities",
     navLabel: "Greater Minnesota",
     blurb:
-      "In-person locals beyond the metro. Travel for a weekly or a monthly and you’ll have a bracket waiting.",
+      "In-person Minnesota fighting game locals beyond the metro — St. Cloud, Fargo–Moorhead, and more. Travel for a weekly or a monthly and you’ll have a bracket waiting.",
     kind: "local",
     communities: [
       {
@@ -80,7 +84,7 @@ export const communityRegions: CommunityRegion[] = [
   },
   {
     id: "discord-servers",
-    title: "Discord Servers",
+    title: "Minnesota Discord servers",
     navLabel: "Discord Servers",
     blurb:
       "Discord servers meeting your scene, netplay, and finding a local. Use these to get plugged in, then go play offline.",
@@ -95,7 +99,7 @@ export const communityRegions: CommunityRegion[] = [
       },
       {
         slug: "mn-tekken",
-        name: "MN Tekken",
+        name: "Minnesota Tekken",
         city: "Statewide",
         logoFile: "mn-tekken.png",
         discord: "https://discord.gg/j7JXnDVpfB",

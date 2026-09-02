@@ -6,9 +6,11 @@ import { initialsFor } from "@/lib/logos";
 export default function OrgLogo({
   name,
   logoFile,
+  alt,
 }: {
   name: string;
   logoFile: string;
+  alt: string;
 }) {
   const filePath = path.join(process.cwd(), "public", "logos", logoFile);
   const hasLogo = existsSync(filePath);
@@ -24,7 +26,7 @@ export default function OrgLogo({
   return (
     <Image
       src={`/logos/${logoFile}`}
-      alt={`${name} logo`}
+      alt={alt}
       fill
       sizes="80px"
       className="object-contain p-2"

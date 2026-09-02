@@ -1,7 +1,5 @@
 import Image from "next/image";
-
-const MIXFEST_URL = "https://www.start.gg/tournament/midwest-mixfest-26";
-const MIXFEST_INFO_URL = "https://www.runthemix.com/mixfest";
+import { MIXFEST_INFO_URL, MIXFEST_URL } from "@/lib/mixfest";
 
 export default function MixfestBanner() {
   return (
@@ -11,7 +9,7 @@ export default function MixfestBanner() {
     >
       <Image
         src="/logos/mixfest26_bg.webp"
-        alt=""
+        alt="Midwest Mixfest 2026 key art for the Minnesota fighting game major in St Paul MN."
         fill
         priority
         sizes="100vw"
@@ -30,10 +28,9 @@ export default function MixfestBanner() {
         <p className="text-xs font-semibold uppercase tracking-[0.35em] text-red-400">
           Featured event
         </p>
-        <h1 className="sr-only">Midwest Mixfest</h1>
         <Image
           src="/logos/MixfestLogoGen2Block_White.png"
-          alt="Midwest Mixfest"
+          alt="Midwest Mixfest 2026, Minnesota fighting game tournament"
           width={4064}
           height={1871}
           priority
@@ -42,6 +39,9 @@ export default function MixfestBanner() {
         <p className="mt-6 max-w-xl text-lg text-zinc-100 sm:text-xl">
           The largest fighting game tournament in the upper Midwest. Three days
           of brackets, side events, and community in Saint Paul.
+        </p>
+        <p className="mt-3 max-w-xl text-lg text-zinc-100 sm:text-xl">
+          Come see what the Minnesota FGC is all about.
         </p>
         <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">
           Nov 13–15, 2026 · DoubleTree Downtown Saint Paul

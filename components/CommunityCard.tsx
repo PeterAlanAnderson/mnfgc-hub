@@ -1,4 +1,4 @@
-import type { Community } from "@/lib/communities";
+import { communityLogoAlt, type Community } from "@/lib/communities";
 import OrgLogo from "@/components/OrgLogo";
 
 function GlobeIcon() {
@@ -55,7 +55,11 @@ export default function CommunityCard({
             community.logoWell === "light" ? "bg-white" : "bg-zinc-950"
           }`}
         >
-          <OrgLogo name={community.name} logoFile={community.logoFile} />
+          <OrgLogo
+            name={community.name}
+            logoFile={community.logoFile}
+            alt={communityLogoAlt(community)}
+          />
         </div>
         <h3 className="font-[family-name:var(--font-display)] text-2xl font-bold uppercase tracking-tight text-white">
           {community.name}

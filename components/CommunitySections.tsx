@@ -15,9 +15,9 @@ export default function CommunitySections() {
           Local communities
         </h2>
         <p className="mt-4 text-zinc-300">
-          Find an in-person scene, then show up. Weeklies, monthlies, and
-          majors first — Discord servers are listed at the bottom if you need
-          a way in.
+          Find Minnesota fighting game locals, then show up. Weeklies,
+          monthlies, and majors first — Discord servers are listed at the
+          bottom if you need a way in.
         </p>
       </div>
 
