@@ -10,7 +10,7 @@ export default function MixfestBanner() {
       className="relative isolate overflow-hidden border-b border-white/10 bg-zinc-950"
     >
       <Image
-        src="/logos/mixfest26_FINAL.png"
+        src="/logos/mixfest26_bg.webp"
         alt=""
         fill
         priority

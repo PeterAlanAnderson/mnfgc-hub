@@ -146,3 +146,6 @@ vite.config.ts.timestamp-*
 .vercel
 next-env.d.ts
 .DS_Store
+
+# Full-resolution source art (keep local; do not deploy)
+originals/
