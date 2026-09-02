@@ -15,7 +15,7 @@ const oswald = Oswald({
 export const metadata: Metadata = {
   title: "MN FGC Hub",
   description:
-    "Find Minnesota fighting game communities, locals, and events. Home of Midwest Mixfest.",
+    "Find Minnesota fighting game communities, locals, and events.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
