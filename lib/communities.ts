@@ -8,6 +8,8 @@ export type Community = {
   logoWell?: "dark" | "light";
   website?: string;
   discord?: string;
+  /** Overrides the default city + Minnesota logo alt text. */
+  logoAlt?: string;
 };
 
 export type CommunityRegion = {
@@ -20,7 +22,10 @@ export type CommunityRegion = {
 };
 
 export function communityLogoAlt(community: Community): string {
-  return `${community.name} logo, ${community.city}, Minnesota fighting game community`;
+  return (
+    community.logoAlt ??
+    `${community.name} logo, ${community.city}, Minnesota fighting game community`
+  );
 }
 
 export const communityRegions: CommunityRegion[] = [
@@ -94,7 +99,9 @@ export const communityRegions: CommunityRegion[] = [
         slug: "mnfgc",
         name: "Minnesota FGC",
         city: "Statewide",
-        logoFile: "mnfgc.png",
+        logoFile: "mnfgc_pfp.png",
+        logoAlt:
+          "Minnesota Fighting Game Community (MNFGC) logo: orange Minnesota silhouette and MNFGC text on a starry sky",
         discord: "https://discord.gg/Drcx8rhwuY",
       },
       {
