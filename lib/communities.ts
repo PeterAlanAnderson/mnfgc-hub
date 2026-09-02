@@ -108,7 +108,9 @@ export const communityRegions: CommunityRegion[] = [
         slug: "mn-tekken",
         name: "Minnesota Tekken",
         city: "Statewide",
-        logoFile: "mn-tekken.png",
+        logoFile: "mntekken-icon-1024.png",
+        logoAlt:
+          "Minnesota Tekken logo: Minnesota silhouette with the Tekken wordmark on a textured blue background",
         discord: "https://discord.gg/j7JXnDVpfB",
       },
       {
